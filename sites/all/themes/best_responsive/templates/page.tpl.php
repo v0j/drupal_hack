@@ -114,26 +114,25 @@
           ?>
         </div>
       </nav>
+      <nav id="top-right" role="navigation">
+        <?php if ($page['nav_top_right']): ?>
+           <?php print render($page['nav_top_right']); ?>
+        <?php endif; ?>
+      </nav>
     </header>
   </div>
 
   <div id="main-content" class="clearfix">
-    <?php if ($is_front): ?>
+    <?php /*if ($is_front): ?>
     <?php if ($site_slogan): ?><h2 id="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
     <?php if (theme_get_setting('slideshow_display','best_responsive')): ?>
+    <?php endif; ?>
+    <?php endif; */?>
     <div id="home-slider">
-      <div class="flexslider-container">
-        <div id="single-post-slider" class="flexslider">
-          <ul class="slides">
-            <li class="slide"><img src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/imagepinoy.jpg'; ?>" alt="Slide"/></li>
-            <!-- <li class="slide"><img src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/slide-image-2.jpg'; ?>" alt="Slide"/></li>
-            <li class="slide"><img src="<?php print base_path() . drupal_get_path('theme', 'best_responsive') . '/images/slide-image-3.jpg'; ?>" alt="Slide"/></li> -->
-          </ul><!-- /slides -->
-        </div><!-- /flexslider -->
-      </div>
+      <?php if($page['banner']): ?>
+          <?php print render ($page['banner']); ?>
+      <?php endif; ?>
     </div>
-    <?php endif; ?>
-    <?php endif; ?>
 
     <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last'] || $page['header']) : ?>
     <div id="preface-area" class="clearfix">
@@ -206,6 +205,6 @@
   <?php endif; ?>
 
   <div id="copyright">
-    <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print $site_name; ?></a>
+    <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>">Agripreneur<?php print $site_name; ?></a>
   </div>
 </div>

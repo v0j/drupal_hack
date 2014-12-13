@@ -54,11 +54,11 @@ body {
 }
 
 body a {
-  color: #e73420;
+  color: #390;
 }
 body a:hover {
   text-decoration: none;
-  color: #e73420;
+  color: #000;
 }
 
 /*set max img width*/
@@ -72,7 +72,7 @@ img {
 
 /*main*/
 #wrap {
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -103,6 +103,79 @@ body.no-sidebars #content {
   font-size: 0.929em;
 }
 
+.page-node-2 #home-slider{
+  background: no-repeat center center url(images/imagepinoy.jpg);
+  width: 1200px;
+  height: 612px;
+  position: relative;
+}
+
+#block-views-exp-producers-page-page{
+  background: #fff;
+}
+#block-views-exp-producers-page-page h2{
+  float: left;
+  padding: 10px 20px;
+}
+.page-node-2 #block-views-exp-producers-page-page{
+  height: 100px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: -55px;
+}
+.page-node-2 #block-views-exp-producers-page-page h2{
+  display: none;
+  float: none;
+}
+#block-block-1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -250px;
+  background: #390;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -100px;
+}
+#block-block-1 a{
+  color: #fff;
+}
+.page-node-2 #views-exposed-form-producers-page-page{
+  background: #390;
+  padding: 10px 0 7px 30px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+#edit-title-wrapper{
+  float: left;
+}
+#edit-title-wrapper .form-item input{
+  padding: 10px 30px;
+}
+#edit-title-wrapper .views-submit-button{
+  float: left;
+}
+#views-exposed-form-producers-page-page .views-submit-button input{
+  margin: 0;
+  margin-top: 2px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #F8941D;
+  cursor: pointer;
+  text-shadow: none;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+}
 
 /* Commons
 ================================================== */
@@ -445,7 +518,7 @@ a:focus {
   position: absolute;
   height: 50px;
   top: 50%;
-  right: 15px;
+  left: 190px;
   margin-top: -16px;
 }
 
@@ -463,7 +536,7 @@ a:focus {
   font-size: 1em;
   height: 32px;
   line-height: 32px;
-  color: #aaa;
+  color: #fff;
   padding: 0 15px;
   text-decoration: none;
   font-weight: 600;
@@ -481,11 +554,11 @@ a:focus {
 }
 
 #navigation #main-menu > ul > li > a:hover {
-  color: #fff;
+  color: #aaa;
 }
 
 #navigation #main-menu > ul > li > a.active {
-  background: #e73420;
+  background: #390;
   color: #fff;
   font-weight: bold;
 }
@@ -552,6 +625,46 @@ a:focus {
 
 #navigation #main-menu > ul ul li > a:hover {
   background-color: #bf2615;
+}
+
+#top-right{
+  position: absolute;
+  right: 15px;
+  top: 25%;
+  height: 50px;
+}
+#top-right #block-menu-menu-top-right h2{
+  display: none;
+}
+#top-right #block-menu-menu-top-right ul.menu{
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#top-right #block-menu-menu-top-right ul.menu li {
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#top-right #block-menu-menu-top-right ul.menu > li > a {
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: block;
+  background: #390;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+}
+#top-right #block-menu-menu-top-right ul.menu > li > a:hover {
+  color: #390;
+  background: #fff;
+}
+#top-right #block-menu-menu-top-right ul.menu > li > a.active {
+  background: #e73420;
+  color: #fff;
+  font-weight: bold;
 }
 
 
